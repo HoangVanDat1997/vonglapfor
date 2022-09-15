@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let x = [ 4,2,5,2,1]
+  let A = 0;
+  let B = x.length - 1 ;
+  while (A<B) {
+      let C = x[A];
+      x[A] = x[B];
+      x[B] = C;
+      A++
+      B--
+  }document.write(x)
+</script>
+</body>
+</html>
