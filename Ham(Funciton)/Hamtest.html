@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh binh phuong</title>
+</head>
+<body>
+binh phuong cua <input text="" id="input" oninput="caculate()"> la : <span id="result" ></span>
+<script>
+  function square (number) {
+    var result = number * number ;
+    return result ;
+  }
+  function caculate () {
+    var input = document.getElementById("input").value ;
+    var result = square(input) ;
+    document.getElementById("result").innerHTML = result;
+  }
+
+</script>
+</body>
+</html>

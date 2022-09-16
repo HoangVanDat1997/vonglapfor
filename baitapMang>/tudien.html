@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="string"> Nhaptu </label>
+<input type="text" name="" id="string">
+<button onclick="transcript()" > Dich </button>
+<p id="result"></p>
+
+
+</body>
+<script>
+    function transcript() {
+        let arrEnglish = ["banana" , "ringo" , "mango" , "pen" , "book"]
+        let arrViet = ["chuối" , "táo" , "xoài" , "bút bi" , "sách"]
+        let string = document.getElementById("string").value;
+        let indexEnglish = 0
+        let result=""
+        for (let i=0;i<arrEnglish.length ; i++) {
+            if (string==arrEnglish[i]) {
+                indexEnglish = i ;
+                for (let j = 0 ; j < arrViet.length ; j++) {
+                    if (indexEnglish==j) {
+                        result = arrViet[j];
+
+                    }
+                }
+            }
+
+        }document.getElementById("result").innerHTML = result;
+    }
+</script>
+
+</html>
