@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date</title>
+</head>
+<body>
+<button onclick="myFunction()" >Chay</button>
+<p id="demo"></p>
+<script>
+  let myDate = function (day , month , year) {
+    this.day = day
+    this.month = month
+    this.year = year
+    this.getDay = function () {
+      return this.day;
+    }
+    this.getMonth = function () {
+      return this.month
+    }
+    this.getYear = function () {
+      return this.year
+    };
+    this.setDay = function () {
+      this.day = day;
+    }
+    this.setMonth = function () {
+      this.month = month;
+    }
+    this.setYear = function () {
+      this.year = year;
+    }
+  }
+  let date = new myDate(3,3,2009);
+  date.setDay(3) ;
+  date.setMonth(4) ;
+  date.setYear(2003);
+  let day = date.getDay()
+  let month = date.getMonth()
+  let year = date.getYear()
+  function myFunction() {
+      myDate.setMonth(4)
+  }
+
+
+</script>
+</body>
+</html>

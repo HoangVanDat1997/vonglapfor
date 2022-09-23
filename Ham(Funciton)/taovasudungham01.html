@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+</head>
+<body>
+<script>
+  function alertMessage() {
+    alert("Xin Chao")
+  }
+  let sao = prompt("Nhap ngoi sao")
+  let arr1 = [Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe, Regulus]
+  let arr2 = [UrsaMinor, Tarurus, Cygnus, Lyra, Aquila, UrsaMajor, Leo]
+  function checksao(sao) {
+    let index = 0 ;
+    let result = "";
+    for (let i = 0 ;i < arr1.length ; i++){
+      if (sao == arr1[i]) {
+        index= i ;
+        for (let j = 0 ; j < arr2.length ; j++) {
+          if (index == j) {
+            result=arr2[j];
+            return result
+          }else {
+            result = " Khong thay chom"
+            return result
+          }
+        }
+      }else {
+        result = " khong thay sao"
+        return result
+      }
+    }document.write(checksao(sao))
+  }
+
+
+
+</script>
+</body>
+</html>

@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Test HTML</title>
+
 </head>
 <body>
-
+<script>
+    function procecsConfirm (answer) {
+        let result = "";
+        if (answer) {
+            result = "Welcome"
+        } else {
+            result = "Bye"
+        }
+return result
+    }
+    let confirmAnswer = confirm("Moi")
+    let theanswer = procecsConfirm(confirmAnswer);
+    alert(theanswer)
+</script>
 </body>
 </html>
